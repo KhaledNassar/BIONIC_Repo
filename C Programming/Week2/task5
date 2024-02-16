@@ -1,0 +1,30 @@
+//Required: Write a C Program to input two angles from user and find third angle of the triangle.
+
+
+/************* includes Start *************/
+#include <stdio.h>
+#include <stdlib.h>
+/*************  includes End  *************/
+
+/************** Global variable section **************/
+float angle1, angle2, angle3;
+/*****************************************************/
+
+
+int main()
+{
+    printf("Please! Enter the two angles: ");
+    scanf("%f %f", &angle1, &angle2);
+
+    if(180 > (angle1 + angle2))
+        {
+            angle3 = 180 - angle1 - angle2 ;
+            printf("The third angle = %.2f\n", angle3);
+        }
+    else
+        {
+            printf("They are invalid Inputs!");
+        }
+
+    return 0;
+}
