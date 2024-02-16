@@ -1,0 +1,22 @@
+//Required: C program to find maximum between three numbers using ternary operator
+
+/************* includes Start *************/
+#include <stdio.h>   //preprocessor directives  (printf() - scanf())
+#include <stdlib.h>  //preprocessor directives
+/*************  includes End  *************/
+
+/************** Global variable section **************/
+signed int Number1, Number2, Number3, Maximum;
+/*****************************************************/
+
+int main()
+{
+    printf("Please! Enter the three numbers: ");
+    scanf("%i %i %i", &Number1, &Number2, &Number3);
+
+    Maximum = (Number1 >= Number2)? ((Number1 >= Number3)? Number1:Number3) : ((Number2 >= Number3)? Number2:Number3) ;
+    printf("The Maximum Number is: %i\n", Maximum);
+
+    printf("Thanks!\n");
+    return 0;
+}
