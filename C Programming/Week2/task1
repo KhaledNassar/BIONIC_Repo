@@ -1,0 +1,42 @@
+//Required: C program to find maximum between three numbers using if condition
+
+/************* includes Start *************/
+#include <stdio.h>   //preprocessor directives  (printf() - scanf())
+#include <stdlib.h>  //preprocessor directives
+/*************  includes End  *************/
+
+/*************** Global variable section  ******************/
+signed int Number1, Number2, Number3;
+/***********************************************************/
+
+int main()
+{
+    printf("Please! Enter the three numbers: ");
+    scanf("%i %i %i", &Number1, &Number2, &Number3);
+
+    if(Number1 >= Number2)
+    {
+        if(Number1 >= Number3)
+        {
+            printf("The Maximum Number is: %i\n", Number1);
+        }
+        else
+        {
+            printf("The Maximum Number is: %i\n", Number3);
+        }
+    }
+    else
+    {
+        if(Number2 >= Number3)
+        {
+            printf("The Maximum Number is: %i\n", Number2);
+        }
+        else
+        {
+            printf("The Maximum Number is: %i\n", Number3);
+        }
+    }
+
+    printf("Thanks!\n");
+    return 0;
+}
