@@ -1,0 +1,43 @@
+//Required: C program to check whether a number is divisible by 5 and 11 or not
+
+/************* includes Start *************/
+#include <stdio.h>
+#include <stdlib.h>
+/*************  includes End  *************/
+
+/************** Global variable section **************/
+signed int Number, div_by_5, div_by_11;
+/*****************************************************/
+
+
+int main()
+{
+    printf("Please! Enter the number: ");
+    scanf("%i", &Number);
+
+    div_by_5 = (Number % 5 == 0);
+    div_by_11 = (Number % 11 == 0);
+
+
+    if(div_by_5 && div_by_11)
+    {
+        printf("The number %i is divisible by 5 and 11\n", Number);
+    }
+    else
+    {
+        if(div_by_5)
+        {
+            printf("The number %i is divisible by 5 but not by 11\n", Number);
+        }
+        else if(div_by_11)
+        {
+            printf("The number %i is divisible by 11 but not by 5\n", Number);
+        }
+        else
+        {
+            printf("The number %i is not divisible by 5 or 11\n", Number);
+        }
+    }
+
+    return 0;
+}
