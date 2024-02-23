@@ -18,8 +18,8 @@ int main()
 
     //A=65 - Z=90  - a=97  - z=122
 
-    upper_case = (character >= 'A' || character <= 'Z');
-    lower_case = (character >= 'a' || character <= 'z');
+    upper_case = (character >= 'A' && character <= 'Z');
+    lower_case = (character >= 'a' && character <= 'z'); // && to meet the two conditions 
 
     if(upper_case && lower_case)
     {
